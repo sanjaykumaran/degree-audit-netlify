@@ -57,7 +57,7 @@ function LogIn() {
       Log In
       </Button>
       <p className="text-center mt-3">
-        Do you have account?{" "}
+        Don't have an account?{" "}
         <Link className="text-decoration-none" to="/signup">
           Sign Up
         </Link>
