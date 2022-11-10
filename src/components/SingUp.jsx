@@ -80,7 +80,7 @@ function SingUp() {
         Sing Up
       </Button>
       <p className="text-center mt-3">
-        Already you have an account?{" "}
+        Already have an account?{" "}
         <Link className="text-decoration-none" to="/login">
           Log In
         </Link>
