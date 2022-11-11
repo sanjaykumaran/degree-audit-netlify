@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
-import SingUp from './components/SingUp';
+import SignUp from './components/SignUp';
 import { Routes, Route } from 'react-router-dom';
 import LogIn from './components/LogIn';
 import AuthProvider from './context/AuthContext';
@@ -17,7 +17,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<PrivateRoute><Profile /></PrivateRoute>} />
                 <Route path='/login' element={<LogIn />} />
-                <Route path='/signup' element={<SingUp />} />
+                <Route path='/signup' element={<SignUp />} />
               </Routes>
             </AuthProvider>
           </div>

@@ -28,12 +28,13 @@ function LogIn() {
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)} style={{ width: "100%" }}>
-      <h1 className="text-center mb-4">Log In</h1>
+      <h1 test-id="errormsg" className="text-center mb-4">Log In</h1>
       {error && <Alert variant="danger">{error}</Alert>}
       {loading && <Loading />}
       <Form.Group className="mb-3">
         <Form.Label>Email address</Form.Label>
         <Form.Control
+          test-id="email"
           {...register("email")}
           type="email"
           placeholder="Enter email"
@@ -42,6 +43,7 @@ function LogIn() {
       <Form.Group className="mb-3">
         <Form.Label>Password</Form.Label>
         <Form.Control
+          test-id="password"
           {...register("password")}
           type="password"
           placeholder="Password"
@@ -49,6 +51,7 @@ function LogIn() {
       </Form.Group>
 
       <Button
+        test-id="submit"
         className="mt-3"
         style={{ width: "100%" }}
         variant="primary"
