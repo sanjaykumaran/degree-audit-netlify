@@ -4,6 +4,7 @@ Website for tracking courses taken and degree progress.
 ### Current use cases
 - UC0: Create User Account
 - UC1: Log In
+- UC4: Subnit Password Change Request
 
 ## Run
 
