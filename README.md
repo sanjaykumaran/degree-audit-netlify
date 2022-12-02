@@ -5,6 +5,7 @@ Website for tracking courses taken and degree progress.
 - UC0: Create User Account
 - UC1: Log In
 - UC4: Submit Password Change Request
+- UC12: Edit Courses Taken
 
 ## Run
 

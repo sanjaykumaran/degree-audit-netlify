@@ -41,9 +41,9 @@ function Profile() {
       <div className="d-flex flex-column w-10">
         <div className="d-flex flex-column w-10">
           <h5>Major Preparatory Requirements</h5>
-          <label>
+          <label className="flex">
             <input type="checkbox" onChange={handleChange} />
-            ECS 1100
+            ECS1100
           </label>
           <label>
             <input type="checkbox" onChange={handleChange} />
@@ -160,18 +160,30 @@ function Profile() {
             <input type="checkbox" onChange={handleChange} />
             CS 4485
           </label>
-          <label>
-            <input type="checkbox" onChange={handleChange} />
-            CS 43XX
-          </label>
-          <label>
-            <input type="checkbox" onChange={handleChange} />
-            CS 43XX
-          </label>
-          <label>
-            <input type="checkbox" onChange={handleChange} />
-            CS 43XX
-          </label>
+          <div class='parent'>
+            <div class='child inline-block-child'>
+              <input type="checkbox" onChange={handleChange} />
+            </div>
+            <div class='child inline-block-child'>
+                <input test-id="edit-course" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CS Guided Elective 1" />
+            </div>
+          </div>
+          <div class='parent'>
+            <div class='child inline-block-child'>
+              <input type="checkbox" onChange={handleChange} />
+            </div>
+            <div class='child inline-block-child'>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CS Guided Elective 2" />
+            </div>
+          </div>
+          <div class='parent'>
+            <div class='child inline-block-child'>
+              <input type="checkbox" onChange={handleChange} />
+            </div>
+            <div class='child inline-block-child'>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CS Guided Elective 3" />
+            </div>
+          </div>
         </div>
         <div className="d-flex flex-column w-10">
           <h5>Core Curriculum</h5>
@@ -211,22 +223,38 @@ function Profile() {
         </div>
         <div className="d-flex flex-column w-10">
           <h5>Electives</h5>
-          <label>
-            <input type="checkbox" onChange={handleChange} />
-            Free Elective 1 (3 Hours)
-          </label>
-          <label>
-            <input type="checkbox" onChange={handleChange} />
-            Free Elective 2 (3 Hours)
-          </label>
-          <label>
-            <input type="checkbox" onChange={handleChange} />
-            Free Elective 3 (3 Hours)
-          </label>
-          <label>
-            <input type="checkbox" onChange={handleChange} />
-            Free Elective 4 (1 Hour)
-          </label>
+          <div class='parent'>
+            <div class='child inline-block-child'>
+              <input type="checkbox" onChange={handleChange} />
+            </div>
+            <div class='child inline-block-child'>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Free Elective 1 (3hr.)" />
+            </div>
+          </div>
+          <div class='parent'>
+            <div class='child inline-block-child'>
+              <input type="checkbox" onChange={handleChange} />
+            </div>
+            <div class='child inline-block-child'>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Free Elective 2 (3hr.)" />
+            </div>
+          </div>
+          <div class='parent'>
+            <div class='child inline-block-child'>
+              <input type="checkbox" onChange={handleChange} />
+            </div>
+            <div class='child inline-block-child'>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Free Elective 3 (3hr.)" />
+            </div>
+          </div>
+          <div class='parent'>
+            <div class='child inline-block-child'>
+              <input type="checkbox" onChange={handleChange} />
+            </div>
+            <div class='child inline-block-child'>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Free Elective 4 (1hr.)" />
+            </div>
+          </div>
           <label>
             <input type="checkbox" onChange={handleChange} />
             UNIV 1010

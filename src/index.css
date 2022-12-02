@@ -22,6 +22,10 @@ body {
   background-color: #17581e !important;
 }
 
+.inline-block-child {
+  display: inline-block;
+}
+
 .bg-image {
   background-image: url("../public/image/1.png");
   background-repeat: no-repeat;
